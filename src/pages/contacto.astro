@@ -1,0 +1,40 @@
+---
+// COMPONENTES
+import NavBar from "../components/NavBar/NavBar.astro";
+import HeroHome from "../components/HeroHome/HeroHome.astro";
+//ESTILO CSS GLOBAL
+import "../../src/estilos/global.css";
+import LayoutBase from "../layouts/LayoutBase.astro";
+---
+
+<LayoutBase
+  siteName={"Le Website"}
+  title="Contatico"
+  titleDefault="Tinker Tailor Soldier Spy"
+  description="Agent"
+  canonical="https://www.emol.com"
+  charset="utf-8"
+  openGraph={{
+    basic: {
+      title: "Tinker Tailor Soldier & Spy",
+      type: "website",
+      image:
+        "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+      url: "smiley",
+    },
+    optional: {
+      audio: "audio_link",
+      description: "optional description",
+      determiner: "an",
+      locale: "de_DE",
+      localeAlternate: ["en_US"],
+      siteName: "test",
+      video: "video_url",
+    },
+  }}
+/>
+<NavBar />
+<HeroHome />
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
